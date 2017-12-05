@@ -1,9 +1,9 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Human or Character Quiz</string>
     <string name="quiz_title">Are you a Human or a Character?</string>
     <string name="quiz_description">Are you a resident of Earth or your imagination? Take the quiz to find out how much human flesh suits you!</string>
     <string name="results">Who am I?</string>
-    <string name="score">Your human score is:</string>
+    <string name="score">Your human score is: <xliff:g id="score_id" example="50">%d</xliff:g>%%</string>
     <string name="question_one">1. What do you do in your free time?</string>
     <string name="one_1">Social media or friends</string>
     <string name="one_2">Novels, games or movies at home</string>
