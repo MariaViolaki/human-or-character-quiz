@@ -9,6 +9,8 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
         android:orientation="vertical">
 
         <TextView
@@ -21,7 +23,7 @@
             android:gravity="center"
             android:text="@string/quiz_title"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:textStyle="bold|italic" />
 
         <ImageView
@@ -43,18 +45,37 @@
                 android:text="@string/quiz_description"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textStyle="italic" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/medium_distance"
+                android:text="@string/name_question"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/name_given"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint"
+                android:inputType="textCapSentences"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/tiny_distance"
+                android:layout_marginTop="@dimen/large_distance"
                 android:text="@string/question_one"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <RadioGroup
+                android:id="@+id/radio_group_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -85,10 +106,11 @@
                 android:layout_marginBottom="@dimen/tiny_distance"
                 android:layout_marginTop="@dimen/small_distance"
                 android:text="@string/question_two"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <RadioGroup
+                android:id="@+id/radio_group_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -119,10 +141,11 @@
                 android:layout_marginBottom="@dimen/tiny_distance"
                 android:layout_marginTop="@dimen/small_distance"
                 android:text="@string/question_three"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <RadioGroup
+                android:id="@+id/radio_group_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -153,10 +176,11 @@
                 android:layout_marginBottom="@dimen/tiny_distance"
                 android:layout_marginTop="@dimen/small_distance"
                 android:text="@string/question_four"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <RadioGroup
+                android:id="@+id/radio_group_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -187,10 +211,11 @@
                 android:layout_marginBottom="@dimen/tiny_distance"
                 android:layout_marginTop="@dimen/small_distance"
                 android:text="@string/question_five"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <RadioGroup
+                android:id="@+id/radio_group_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -221,10 +246,11 @@
                 android:layout_marginBottom="@dimen/tiny_distance"
                 android:layout_marginTop="@dimen/small_distance"
                 android:text="@string/question_six"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <RadioGroup
+                android:id="@+id/radio_group_6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -255,10 +281,11 @@
                 android:layout_marginBottom="@dimen/tiny_distance"
                 android:layout_marginTop="@dimen/small_distance"
                 android:text="@string/question_seven"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <RadioGroup
+                android:id="@+id/radio_group_7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -289,10 +316,11 @@
                 android:layout_marginBottom="@dimen/tiny_distance"
                 android:layout_marginTop="@dimen/small_distance"
                 android:text="@string/question_eight"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <RadioGroup
+                android:id="@+id/radio_group_8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -323,10 +351,11 @@
                 android:layout_marginBottom="@dimen/tiny_distance"
                 android:layout_marginTop="@dimen/small_distance"
                 android:text="@string/question_nine"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <RadioGroup
+                android:id="@+id/radio_group_9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -357,10 +386,11 @@
                 android:layout_marginBottom="@dimen/tiny_distance"
                 android:layout_marginTop="@dimen/small_distance"
                 android:text="@string/question_ten"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <RadioGroup
+                android:id="@+id/radio_group_10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -389,54 +419,85 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/large_distance"
                 android:layout_marginTop="@dimen/large_distance"
                 android:onClick="showResults"
+                android:padding="@dimen/small_distance"
                 android:text="@string/results" />
 
             <LinearLayout
+                android:id="@+id/results"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingBottom="@dimen/small_distance">
-
-                <ImageView
-                    android:id="@+id/image_result"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    android:adjustViewBounds="true" />
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:visibility="gone">
 
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:orientation="vertical"
-                    android:paddingLeft="@dimen/small_distance">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/large_distance">
 
-                    <TextView
-                        android:id="@+id/human_score"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text=""
-                        android:textColor="#B71C1C" />
+                    <ImageView
+                        android:id="@+id/image_result"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:adjustViewBounds="true" />
 
-                    <TextView
-                        android:id="@+id/quiz_results_title"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text=""
-                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
-                        android:textColor="#FFFFFF"
-                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/small_distance">
 
-                    <TextView
-                        android:id="@+id/quiz_results"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text=""
-                        android:textColor="#FFFFFF" />
+                        <TextView
+                            android:id="@+id/human_score"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/red" />
+
+                        <TextView
+                            android:id="@+id/quiz_results_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/quiz_results"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/white" />
+
+                    </LinearLayout>
 
                 </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/medium_distance"
+                    android:paddingLeft="@dimen/tiny_distance"
+                    android:text="@string/email" />
+
+                <Button
+                    android:id="@+id/quit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/tiny_distance"
+                    android:onClick="quit"
+                    android:padding="@dimen/small_distance"
+                    android:text="@string/quit" />
 
             </LinearLayout>
 

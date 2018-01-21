@@ -2,6 +2,8 @@
     <string name="app_name">Human or Character Quiz</string>
     <string name="quiz_title">Are you a Human or a Character?</string>
     <string name="quiz_description">Are you a resident of Earth or your imagination? Take the quiz to find out how much human flesh suits you!</string>
+    <string name="name_question">What is your name, dear wanderer?</string>
+    <string name="hint">Enter your name</string>
     <string name="results">Who am I?</string>
     <string name="score">Your human score is: <xliff:g id="score_id" example="50">%d</xliff:g>%%</string>
     <string name="question_one">1. What do you do in your free time?</string>
@@ -44,15 +46,19 @@
     <string name="ten_1">Almost Nothing</string>
     <string name="ten_2">Only some things</string>
     <string name="ten_3">Almost Everything</string>
-    <string name="very_human_title">Pure Earthling!</string>
+    <string name="very_human_title"><xliff:g id="name" example="Maria">%s</xliff:g>, the Pure Earthling!</string>
     <string name="very_human">You are completely normal! You know how to play by Earth\'s rules and you don\'t have a problem fitting in. Enjoy life as it is!</string>
-    <string name="human_title">Earthling!</string>
+    <string name="human_title"><xliff:g id="name" example="Maria">%s</xliff:g>, the Earthling!</string>
     <string name="human">You are a normal person! Although your identity is as you thought up to now, there are a few things you would choose to fix about the world if you could.</string>
-    <string name="unsure_title">Hybrid!</string>
+    <string name="unsure_title"><xliff:g id="name" example="Maria">%s</xliff:g>, the Hybrid!</string>
     <string name="unsure">You are a hybrid! You don\'t belong in only one category and you don\'t have to. Life isn\'t good or bad nor easy to define.</string>
-    <string name="character_title">Hero!</string>
+    <string name="character_title"><xliff:g id="name" example="Maria">%s</xliff:g>, the Hero!</string>
     <string name="character">Fortunately or not, \"human\" isn\'t the right identity for you! There is something wrong in this world and you\'d make a great hero in a story!</string>
-    <string name="very_character_title">Pure hero!</string>
+    <string name="very_character_title"><xliff:g id="name" example="Maria">%s</xliff:g>, the Pure Hero!</string>
     <string name="very_character">You are the king/queen of your imagination! If you put your ideas into practice, the world would be a truly unique place to live. Start creating!</string>
+    <string name="email">I want to share my results via e-mail before quitting!</string>
+    <string name="quit">Quit</string>
+    <string name="radiobuttons_toast">Please answer all questions.</string>
+    <string name="name_toast">Please enter a name.</string>
 
 </resources>
